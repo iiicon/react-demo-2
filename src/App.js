@@ -24,10 +24,11 @@ class Box extends React.Component {
   }
 }
 
-function App() {
+function App(props) {
   return (
     <div className="App">
-      <Box name="box is god"/>
+      name is {props.name}
+      <Box name="box is god" />
     </div>
   )
 }
